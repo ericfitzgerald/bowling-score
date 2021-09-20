@@ -1,7 +1,7 @@
-## Bowling score demo
-# Building
+# Bowling score demo
+## Building
 dotnet build
-# Testing
+## Testing
 dotnet test ServicesTest/ServicesTest.csproj
-# Running
+## Running
 dotnet run --project ConsoleApp/ConsoleApp.csproj
