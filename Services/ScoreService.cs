@@ -9,7 +9,7 @@ namespace Services
             var newFrame = new Frame(frameNumber);
             Random random = new Random();
 
-            newFrame.Score1 = random.Next(1,11);
+            newFrame.Score1 = random.Next(0,11);
             if ((!newFrame.IsFinalFrame && !newFrame.IsStrike) || (newFrame.IsFinalFrame && !newFrame.IsStrike)) {
                 newFrame.Score2 = random.Next(0,11-newFrame.Score1);
             } else if (newFrame.IsFinalFrame && newFrame.IsStrike) {
